@@ -55,11 +55,11 @@ const convertHourFormat = (timeHour) => {
 }
 
 // This function adds leading zeros to the digits less than 10 in the hour portion of the clock;
-const addZeros = (timeHour) => {
-    if(timeHour < 10){
-        timeHour = '0' + timeHour;
+const addZeros = (time) => {
+    if(time < 10){
+        time = '0' + time;
     }
-    return timeHour;
+    return time;
 }
 
 // We then set an interval for the tick function---time duration for the second
